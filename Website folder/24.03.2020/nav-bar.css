@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+  }
+  body{
+      background-color:wheat;      
+    }
+  .menus li a {
+    text-decoration: none;
+    text-align: center;
+    } 
+  .menus li {
+    list-style-type: none;
+  } 
+  nav {
+    position: static;   
+    margin: 0;
+    padding: 10px 10px;
+    background: #333;   
+    text-align: right;
+    padding-right: 2%;
+    position: -webkit-sticky;
+        position: sticky;
+        top: 0; 
+  }  
+  .LogoTitle {
+    
+    width: 15%;
+    float: left;
+    text-transform: uppercase;
+    color: darkorange;
+    font-size: 25px;
+    text-align: left;
+    padding-left: 5%;
+    font-weight: bolder;
+    text-decoration: none;
+    background:url(https://i.postimg.cc/kV97M9R7/logo.png); 
+    -webkit-background-size:cover;
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;   
+}
+  
+  .menus li {
+    display: inline-block;
+  }
+  
+  .menus a {
+    transition: 3s; 
+    transition-duration: .5s;
+    animation: ease-in;
+    font-weight: 900;
+    color: darkorange;      
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: block;
+    padding: 0 25px;
+    font-size: 20px;
+    line-height: 30px;
+    position: relative;
+    z-index: 1;
+  }
+  .menus a:hover {
+    background: none;  
+    color: white;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: 1.5s;  
+  }
+  
+  li a.active{
+      background-color: white;     
+  }
+  .welcome{
+      text-align: center;
+      padding: 50px;
+      color: darkorange;
+  }
+  .infoForMe{
+      text-align: center;
+  }
+  .text{
+      text-align: center;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+ 
