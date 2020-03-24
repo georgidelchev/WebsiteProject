@@ -85,6 +85,42 @@
   .text{
       text-align: center;
   }
+  .menus .searchy {
+    float: right;
+  }
+  
+  .menus input[type=text] {
+    padding: 7px;
+    text-align: left;
+    margin-top: 0px;
+    font-size: 17px;
+    border: 10px;
+    background-color: #333;
+    color: darkorange;
+  }
+  
+  .menus .searchy button {
+    float: left;
+    padding: 6px 10px;
+    margin-top: 0px;
+    margin-right: 0px;
+    background: #333;
+    font-size: 17px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: darkorange;
+    transition: 1.2s;
+    transform: translate(0,0px);
+  }
+  
+  .menus .searchy button:hover {
+    background: darkorange;
+    color: white;
+  }
+  
+  
+ 
   
   
   
