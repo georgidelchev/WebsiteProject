@@ -1,0 +1,76 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(./images/bcgr.jpg);
+    background-size: cover;   
+    font-family: sans-serif;  
+}
+.box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    padding: 40px;
+    background: darkorange(1);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.5);
+    border-radius: 10px;
+}
+.box h2
+{
+    margin: 0 0 30px;
+    padding: 0;
+    color: darkorange;
+    text-align: center;
+    font-size: 35px;
+}
+.box .inputBox
+{
+    position: relative;
+}
+.box .inputBox input{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: black;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px;
+    border: 1px solid black;
+    outline: none;
+    background: transparent;
+    text-align: center;
+}
+.box .inputBox label{
+    position: absolute;
+    top: 0;
+    left: 5;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: darkorange;
+    pointer-events: none;
+    transition: .2s;
+    text-align: center;
+    font-weight: 800;
+}
+.box .inputBox input:focus ~ label,
+.box .inputBox input:valid ~ label{
+    top: -35px;
+    left: 0;
+    color: darkorange;
+    font-size: 20px;
+}
+.box input[type="submit"]{
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    background: darkorange;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
+}
