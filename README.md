@@ -1,5 +1,5 @@
 # WebsiteProject
-Im still learning html,css. Im begginer at this.
+This is small begginer project to learn HTML/CSS basics!
 
 I will update this project periodically!
 Im open for suggestions and critics :)!
