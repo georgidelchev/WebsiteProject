@@ -1,125 +1,106 @@
-* {
-    margin: 0;
-    padding: 0;
-    outline: 0;
-    box-sizing: border-box;
-  }
-  body{
-      background-color:lightblue;      
-    }
-  .menus li a {
-    text-decoration: none;
-    text-align: center;
-    } 
-  .menus li {
-    list-style-type: none;
-  } 
-  nav {   
-    margin: 0;
-    padding: 10px 10px;
-    background: #333;   
-    text-align: right;
-    padding-right: 2%;
-
-  }  
-  .LogoTitle {
-    
-    width: 15%;
-    float: left;
-    text-transform: uppercase;
-    color: darkorange;
-    font-size: 25px;
-    text-align: left;
-    padding-left: 5%;
-    font-weight: bolder;
-    text-decoration: none;
-    background:url(https://i.postimg.cc/kV97M9R7/logo.png); 
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body{
+  background-color: whitesmoke;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+nav{
+  background: #333;
+  height: 80px;
+  width: 100%;
+}
+label.logo{
+  font-size: 50px;
+  line-height: 50px;
+  padding: 0 25px;
+  font-weight: bold;
+  cursor: pointer;
+  background:url(https://i.postimg.cc/kV97M9R7/logo.png); 
     -webkit-background-size:cover;
     background-size: contain;
     background-position: left;
-    background-repeat: no-repeat;   
+    background-repeat: no-repeat;
+    padding-right: 140px;
+    padding-bottom: 35px;
 }
-  
-  .menus li {
-    display: inline-block;
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 1px;
+}
+nav ul li a{
+  color: white;
+  font-size: 25px;
+  padding: 25px 7px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+a.active{
+  background: gray;
+}
+a.active,a:hover{
+  color: #333;
+  background: gray;
+  transition: .1s;
+}
+.checkbtn{
+  font-size: 60px;
+  color: darkorange;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+@media (max-width: 952px){
+  label.logo{
+    font-size: 30px;
+    padding-left: 50px;
   }
-  
-  .menus a {
-
-
-    color: darkorange;      
-    letter-spacing: 1px;
-    text-transform: uppercase;
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+@media (max-width: 1100px){
+  .checkbtn{
     display: block;
-    padding: 0 25px;
-    line-height: 30px;
+  }
+  ul{
     position: relative;
-    z-index: 1;
-    
-  }
-  .menus a:hover {
-    background: none;  
-    color: white;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    transition: 1s;  
-  }
-  
-  li a.active{
-      background-color: white; 
-         
-  }
-  .welcome{
-      text-align: center;
-      padding: 50px;
-      color: darkorange;
-  }
-  .infoForMe{
-      text-align: center;
-  }
-  .text{
-      text-align: center;
-  }
-  .menus .searchy {
-    float: right;
-  }
-  
-  .menus input[type=text] {
-    padding: 7px;
-    text-align: left;
-    margin-top: 0px;
-    font-size: 17px;
-    border: 10px;
-    background-color: #333;
-    color: darkorange;
-  }
-  
-  .menus .searchy button {
-    float: left;
-    padding: 6px 10px;
-    margin-top: 0px;
-    margin-right: 0px;
+    width: 94%;
+    height: 60vh;
     background: #333;
-    font-size: 17px;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    color: darkorange;
+    top: 50px;
+    left: -100%;
+    text-align: center;
+    transition: all 1s;
   }
-  
-  .menus .searchy button:hover {
-    background: darkorange;
-    color: white;
+  nav ul li{
+    display: block;
+    margin: 30px 10px;
+    line-height: 70px;
   }
-  
-  
- 
-  
-  
-  
-  
-  
-  
-  
-  
-  
- 
+  nav ul li a{
+    font-size: 30px;
+  }
+  a:hover,a.active{
+    background: gray;
+    color: #333;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+
